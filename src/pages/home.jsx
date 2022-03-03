@@ -15,7 +15,6 @@ export function Home(){
     <div id="home-login">
       <aside>
         <img src={illustrationImg} alt="Ilustração de atendimento do restaurante" />
-        <div id="back-img"></div>
         <h2>Atendimento automatizado.</h2>
         <p>Sua experiência com atendimento como você nunca viu.</p>
       </aside>
