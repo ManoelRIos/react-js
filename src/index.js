@@ -17,6 +17,11 @@ class App extends React.Component{
   }
 }
 
+function formatDate(date){
+  return date.toLocaleDateString();
+}
+
+
 function Avatar(props){
   return(
     <img src={props.user.avatarUrl}
@@ -24,10 +29,12 @@ function Avatar(props){
   )
 }
 
-function userInfo(props){
+function UserInfo(props){
   return(
-    <Avatar user={props.user}/>
-    {props.user.name}
+    <div className="UserInfo">
+      <Avatar user={props.user}/>
+      {props.user.name}      
+    </div>
   )
 }
 
